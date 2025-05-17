@@ -1,0 +1,61 @@
+{
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "explorer.confirmDelete": false,
+    "python.analysis.extraPaths": [
+        "",
+        "/home/alex/.vscode/extensions/wmerkens.vscode-circuitpython-v2-0.3.3/stubs",
+        "/home/alex/.config/Code/User/globalStorage/wmerkens.vscode-circuitpython-v2/bundle/20250223/adafruit-circuitpython-bundle-py-20250223/lib"
+    ],
+    "raspberry-pi-pico.python3Path": "/usr/bin/python3",
+    "explorer.confirmDragAndDrop": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "python.defaultInterpreterPath": "/home/alex/myenv",
+    "workbench.startupEditor": "none",
+    "files.associations": {
+        "TODO": "plaintext",
+        "index.css": "tailwindcss"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 20,
+    "editor.cursorStyle": "line-thin",
+    "editor.tabCompletion": "on",
+    "workbench.editor.showTabs": "single",
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.editor.enablePreview": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+
+    "editor.minimap.enabled": false,
+    "macros": {
+      "toggleCopilotChat": [
+        "workbench.action.showCommands",
+        {
+          "command": "type",
+          "args": { "text": "Copilot: Open Chat" }
+        },
+        {
+          "command": "workbench.action.acceptSelectedQuickOpenItem"
+        }
+      ],
+
+      "openCopilotChatEditor": [
+        "github.copilot.chat.openInEditor"
+      ]
+
+    },
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "prettier.configPath": "/home/alex/dotfiles/vscode/.config/Code/User/.prettierrc"
+
+
+
+}

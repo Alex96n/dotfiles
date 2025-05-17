@@ -1,0 +1,33 @@
+# Ignore artifacts:
+dist/
+build/
+coverage/
+*.min.js
+*.min.css
+
+# Dependency directories:
+node_modules/
+bower_components/
+vendor/
+
+# OS / IDE / editor files:
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Ignore version control directories
+.git/
+.gitignore
+
+# Optional:
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore Prettier config itself (if needed)
+.prettierrc
+.prettierignore
