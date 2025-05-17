@@ -1,0 +1,115 @@
+[
+    {
+      // === TOP BAR ===
+      "name": "top",
+      "layer": "top",
+      "position": "top",
+      "height": 40,
+      "modules-left": ["battery", "backlight", "pulseaudio"],
+      "modules-center": ["hyprland/workspaces"],
+      "modules-right": ["clock"],
+  
+      "battery": {
+        "interval": 10,
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{capacity}%",
+        "format-charging": " {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": true
+      },
+  
+      "backlight": {
+        "device": "amd_backlight",
+        "format": "{icon} {percent}% ",
+        "format-icons": ["", ""]
+      },
+  
+      "pulseaudio": {
+        "tooltip": true,
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-icons": {
+          "default": ["", "", ""]
+        }
+      },
+  
+      "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": "",
+          "default": "",
+        }
+
+      },
+  
+      "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": " {:%A, %B %d, %Y}"
+      }
+    },
+  
+    {
+      // === BOTTOM BAR ===
+      "name": "bottom",
+      "layer": "top",
+      "position": "bottom",
+      "height": 40,
+      "modules-left": ["temperature", "cpu", "memory", "network", "bluetooth"],
+      "modules-center": ["power-profiles-daemon"],
+      "modules-right": ["privacy", "tray"],
+  
+      "temperature": {
+        "interval": 5,
+        "format": " {temperatureC}°C",
+        "critical-threshold": 80,
+        "tooltip": true
+      },
+  
+      "cpu": {
+        "interval": 5,
+        "format": " {}%",
+        "states": { "warning": 70, "critical": 90 }
+      },
+  
+      "memory": {
+        "interval": 5,
+        "format": " {}%",
+        "states": { "warning": 70, "critical": 90 }
+      },
+  
+      "network": {
+        "interval": 5,
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}"
+      },
+  
+      "bluetooth": {
+        "format": " {status}",
+        "format-connected": " {device_alias}",
+        "format-disabled": "",
+        "tooltip": true
+      },
+  
+      "power-profiles-daemon": {
+        "format": " {profile}"
+      },
+  
+      "privacy": {
+        "icon-spacing": 5,
+        "modules": ["microphone", "camera"]
+      },
+  
+      "tray": {
+        "icon-size": 21,
+        "spacing": 10
+      }
+    }
+  ]
+  
